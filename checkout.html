@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lighting Lamp Shop CheckOut</title>
+<title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
@@ -15,15 +15,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--theme style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <script src="js/jquery.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158272465-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-158272465-1');
-</script>
 
 
 <!--//theme-style-->
@@ -37,7 +28,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/memenu.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158272465-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158272465-1');
+</script>
+
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+
+<script>
+	function placeOrder(){
+		alert("Payment Done");
+		document.getElementById("detail").innerHTML = "<h3>Price Details</h3>	";
+		document.getElementById("TotalPrice").innerHTML = "0.00";
+		document.getElementById("item_1").innerHTML="<p></p>";
+		
+	}
+	
+ </script>
 <!-- /start menu -->
 </head>
 <body>
@@ -106,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="check-sec">	 
 		<div class="col-md-3 cart-total">
 			<a class="continue" href="product.html">Continue to basket</a>
-			<div class="price-details">
+			<div class="price-details" id="detail">
 				<h3>Price Details</h3>
 				<span>Total</span>
 				<span class="total1">6200.00</span>
@@ -118,18 +130,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 			<ul class="total_price">
 			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price"><span>6150.00</span></li>			   
+			   <li class="last_price"><span id = "TotalPrice">6150.00</span></li>			   
 			</ul> 
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
-			<a class="order" href="#">Place Order</a>
+			<a class="order" href="#" onclick="placeOrder()">Place Order2</a>
 			<div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
 				<a class="cpns" href="#">Apply Coupons</a>
 			</div>
 		</div>
-		<div class="col-md-9 cart-items">
+		<div class="col-md-9 cart-items" id="item_1">
 			<h1>My Shopping Bag (2)</h1>
 				<script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){
@@ -139,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});	  
 					});
 			   </script>
-			<div class="cart-header">
+			<div class="cart-header" id ="cart-header_1">
 				<div class="close1"> </div>
 				<div class="cart-sec simpleCart_shelfItem">
 						<div class="cart-item cyc">
